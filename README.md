@@ -18,3 +18,17 @@ Currently, we only offer two services:
 Whether you're a fresh-faced rookie just clutching that shiny new spaceship license or a seasoned space warrior who survived countless space battles, the yearning for that perfect spacecraft is universal. And you will find the step-by-step guide below to make that dream of yours a glorious reality.
 
 Once you arrive at Hammer & Stellar shipyard, please proceed to our front desk:
+```
+const shipyard = require("./arrivedAtHSShipyard");
+const frontdesk = shipyard.frontdesk();
+```
+When you meet with our welcoming receptionist, they'll gladly offer you a registration form. We kindly request that you complete this form before our dedicated staff member proceeds to assist you with your request.
+```
+const registrationForm = frontdesk();
+```
+An important point to bear in mind is that our front desk is currently staffed by a basic robot. It has very limited interaction capabilities. While you can communicate with it, its responses are confined to "Yes" or "No" answers.
+```
+frontdesk("hi") // it replies 'Yes'
+frontdesk(1)    // it replies 'No'
+```
+I understand that it can be quite frustrating. We're leaving no stone unturned in our quest to recruit top-tier talent. Regrettably, the prevailing conflicts of our times have discouraged many from venturing into the cosmos.
