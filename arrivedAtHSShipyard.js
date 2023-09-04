@@ -20,18 +20,16 @@ const interactWithFrontDesk = function* interactWithFrontDesk(customerStat) {
     }
 };
 
-const registrationForm = (customerStat, name, shipSize, nebulaCoins, appointment) => {
+const registrationForm = (customerStat, name, shipSize, payment) => {
     let _customerStat = customerStat,
         _name = name,
         _shipSize = shipSize,
-        _nebulaCoins = nebulaCoins,
-        _appointment = appointment;
+        _payment = payment,
     return {
         getCustomerStat: () => _customerStat,
         getName: () => _name,
         getShipSize: () => _shipSize,
-        getNebulaCoins: () => _nebulaCoins,
-        getAppointment: () => _appointment,
+        getPayment: () => _payment,
     };
 };
 
