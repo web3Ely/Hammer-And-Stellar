@@ -24,7 +24,7 @@ const registrationForm = (customerStat, name, shipSize, payment) => {
     let _customerStat = customerStat,
         _name = name,
         _shipSize = shipSize,
-        _payment = payment,
+        _payment = payment;
     return {
         getCustomerStat: () => _customerStat,
         getName: () => _name,
