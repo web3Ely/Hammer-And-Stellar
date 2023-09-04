@@ -13,7 +13,7 @@ Currently, we only offer two services:
 - ***Ship engine*** --- it is a service that attaches the engine of your choice to your dream spaceship
 - _Other services are coming soon_
 
-## Instructions
+## Registration
 
 Whether you're a fresh-faced rookie just clutching that shiny new spaceship license or a seasoned space warrior who survived countless space battles, the yearning for that perfect spacecraft is universal. And you will find the step-by-step guide below to make that dream of yours a glorious reality.
 
@@ -31,4 +31,14 @@ An important point to bear in mind is that our front desk is currently staffed b
 frontdesk("hi") // it replies 'Yes'
 frontdesk(1)    // it replies 'No'
 ```
-I understand that it can be quite frustrating. We're leaving no stone unturned in our quest to recruit top-tier talent. Regrettably, the prevailing conflicts of our times have discouraged many from venturing into the cosmos.
+We completely understand how frustrating it can be to receive responses limited to only 2 answers. We're leaving no stone unturned in our quest to recruit top-tier talent. Regrettably, the prevailing conflicts of our times have discouraged many from venturing into the cosmos.
+
+The registration form only has four fields: ***your name, your desired spaceship size, and payment method***. Upon completing the form, please kindly submit it to our front desk staff.
+```
+const form = registrationForm("web3Ely");
+const specialists = frontdesk(form);
+```
+Congratulations! Your registration process is now complete, and our team of specialists is there to offer their expertise alongside our exceptional services.
+
+## Specialist 
+### Bob the floor guy
