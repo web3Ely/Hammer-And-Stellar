@@ -1,14 +1,21 @@
 {
-    "name": "oommo",
+    "name": "hammer-and-stellar",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "Welcome to Hammer & Stellar, where we build your celestial vessels beyond imagination!",
+    "main": "arrivedAtHSShipyard.js",
     "scripts": {
         "test": "jest"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/web3Ely/Hammer-And-Stellar.git"
+    },
+    "keywords": [
+        "Spaceship crafting",
+        "H&S"
+    ],
+    "author": "Web3Ely",
+    "license": "MIT",
     "devDependencies": {
         "jest": "^29.6.3"
     }
