@@ -22,7 +22,6 @@ shipyard.construct = (flooring, appliance) => {
             floorPlan[pos].push(line);
         }
     });
-    console.log(appliance);
     const [start, end] = appliance.applianceStructure[0];
     const center = {
         x: start + Math.floor((end - start) / 2),

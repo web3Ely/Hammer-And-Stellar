@@ -1,6 +1,6 @@
 {
     "name": "hammer-and-stellar",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Welcome to Hammer & Stellar, where we build your celestial vessels beyond imagination!",
     "main": "arrivedAtHSShipyard.js",
     "scripts": {
