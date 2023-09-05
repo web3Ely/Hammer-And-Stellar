@@ -35,7 +35,7 @@ We completely understand how frustrating it can be to receive responses limited 
 
 The registration form only has four fields: ***your name, your desired spaceship size, and payment method***. Upon completing the form, please kindly submit it to our front desk staff.
 ```
-const form = registrationForm("web3Ely");
+const form = registrationForm("Mr. Aha", regular, nebula coins);
 const specialists = frontdesk(form);
 ```
 Congratulations! Your registration process is now complete, and our team of specialists is there to offer their expertise alongside our exceptional services.
