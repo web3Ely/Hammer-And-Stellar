@@ -97,7 +97,16 @@ const appliancePlacementForm = (appliance, alignment, position, flooring, ...res
         inputflooring
     );
     if (!isPossible) return { errorMessage: "Provided postion does not fit for appliance" };
-    return { type: "appliance", appliance, combinedPosition, flooring: inputflooring };
+    const applianceSize = ApplianceSize[appliance].map((line, index) => [
+        combinedPosition[0] - index,
+        combinedPosition[0] - index + line,
+    ]);
+    return {
+        type: "appliance",
+        applianceName: appliance,
+        applianceStructure: applianceSize,
+        combinedPosition,
+    };
 };
 
 const inspectionResult = (input) => {

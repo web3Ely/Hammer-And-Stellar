@@ -12,6 +12,18 @@ shipyard.frontdesk = (customerStat = "New Customer") => {
     return (arg) => interaction.next(arg).value;
 };
 
+shipyard.construct = (flooring, appliance) => {
+    const floorPlan = HSUtility.deepCopy(flooring.flooring);
+    appliance.applianceStructure.forEach((line, index) => {
+        const pos = appliance.combinedPosition[1] + index;
+        if (floorPlan.length < pos) {
+            floorPlan.push(line);
+        } else {
+            floorPlan[pos].push(line);
+        }
+    });
+};
+
 const interactWithFrontDesk = function* interactWithFrontDesk(customerStat) {
     let outGoingInteraction = registrationForm.bind(null, customerStat);
     while (true) {
