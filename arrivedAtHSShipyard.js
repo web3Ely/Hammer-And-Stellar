@@ -22,7 +22,13 @@ shipyard.construct = (flooring, appliance) => {
             floorPlan[pos].push(line);
         }
     });
-    return floorPlan;
+    console.log(appliance);
+    const [start, end] = appliance.applianceStructure[0];
+    const center = {
+        x: start + Math.floor((end - start) / 2),
+        y: appliance.combinedPosition[1] + 1,
+    };
+    return { floorPlan, center };
 };
 
 const interactWithFrontDesk = function* interactWithFrontDesk(customerStat) {
