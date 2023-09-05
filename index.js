@@ -23,8 +23,9 @@ const appliance = appliancePlacementForm(
     [12, 9],
     flooring2
 );
-console.log(appliance);
+// console.log(appliance);
 const ship = shipyard.construct(flooring2, appliance);
+console.log(ship);
 // OmigTheHandfulMechanic(appliance);
 //yumyum
 // const yumyumTheFeistySmith = specialists.YumyumTheFeistySmith;

@@ -22,6 +22,7 @@ shipyard.construct = (flooring, appliance) => {
             floorPlan[pos].push(line);
         }
     });
+    return floorPlan;
 };
 
 const interactWithFrontDesk = function* interactWithFrontDesk(customerStat) {
